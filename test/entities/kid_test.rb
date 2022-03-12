@@ -6,7 +6,7 @@ require_relative "../../entities/kid"
 
 class KidTest < Minitest::Test
   def setup
-    @kid = Kid.new(inventory: [{cocaine: 10, mdma: 30, pot: 10, paper: 12000}])
+    @kid = Kid.new(inventory: [{mdma: 1, pot: 1, paper: 100}])
   end
 
   def test_instance_of_kid

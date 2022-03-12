@@ -1,10 +1,13 @@
 # frozen_string_literal: true
 
 require_relative "../traits/human_movement"
+require_relative "../traits/human_bio"
 require_relative "../rave"
 
 class Dealer
   include HumanMovement
+  include HumanBio
+
   attr_reader :inventory, :sales, :fails, :car, :weapon, :location
 
   def initialize(inventory:, car:, weapon:)
